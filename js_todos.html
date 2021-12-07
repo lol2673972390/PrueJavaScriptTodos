@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./lib/jquery-2.2.4.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/js_todos.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div id="header">
+            <h1 class="text-center">todos</h1>
+        </div>
+        <!-- 主体 -->
+        <div id="main">
+            <div class="form-group">
+                <label for="exampleInputEmail1">今天又想做什么事情呢？</label>
+                <div class="allState">
+                    <input type="text" id="content" name="content" placeholder="What needs to be done?">
+                    <a href="#none" class="glyphicon glyphicon-chevron-down"></a>
+                </div>
+                <!-- 显示列表 -->
+                <ul class="list-group">
+                </ul>
+                <div class="operate">
+                    <span></span>
+                    <button class="nowSelect">All</button>
+                    <button>Active</button>
+                    <button>Completed</button>
+                    <a href="#none">clear completed</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/axiosP.js"></script>
+    <script src="./lib/js_todos.js"></script>
+</body>
+
+</html>
